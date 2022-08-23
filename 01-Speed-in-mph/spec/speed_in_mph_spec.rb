@@ -13,7 +13,8 @@ describe '#speed_in_mph' do
   end
 
   it 'returns the new value in miles per hour' do
-    expect(speed_in_mph(120.3)).to eq(74.75)
-    expect(speed_in_mph(10)).to eq(6.21)
+    mph = 0.6213711922
+    expect(speed_in_mph(120.3)).to eq((120.3 * mph).round(2))
+    expect(speed_in_mph(10)).to eq((10 * mph).round(2))
   end
 end
