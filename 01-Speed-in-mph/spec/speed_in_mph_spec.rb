@@ -6,7 +6,7 @@
 require 'speed_in_mph'
 
 describe '#speed_in_mph' do
-  it 'returns an error if the parameter is not an Number' do
+  it 'returns an error if the parameter is not a Number' do
     error = 'Please pass a valid speed.'
     expect(speed_in_mph('123')).to eq(error)
     expect(speed_in_mph(true)).to eq(error)
